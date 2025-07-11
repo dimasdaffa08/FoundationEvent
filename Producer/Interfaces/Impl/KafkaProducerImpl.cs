@@ -1,11 +1,14 @@
 using Confluent.Kafka;
+using Google.Protobuf;
 using Microsoft.Extensions.Logging;
 using Producer.Configurations;
+using Producer.Extensions;
 using Producer.Model;
 
 namespace Producer.Interfaces.Impl;
 
-public class KafkaProducerImpl<TKey, TValue> : IKafkaProducer<TKey, TValue>
+public class KafkaProducerImpl<TKey, TValue> : IKafkaProducer<TKey, TValue> 
+    where TValue : IMessage<TValue>
 {
     private readonly IProducer<TKey, TValue> _producer;
     private readonly ILogger<KafkaProducerImpl<TKey, TValue>> _logger;
@@ -23,21 +26,25 @@ public class KafkaProducerImpl<TKey, TValue> : IKafkaProducer<TKey, TValue>
         }
 
         var config = KafkaProducerConfig.BuildProducerConfig(options);
-        _producer = new ProducerBuilder<TKey, TValue>(config)
-            .SetErrorHandler((_, e) => _logger.LogError("Kafka producer error: {Error}", e.Reason))
-            .SetLogHandler((_, log) => 
+        
+        var builder = new ProducerBuilder<TKey, TValue>(config);
+        builder.SetErrorHandler((_, e) => _logger.LogError("Kafka producer error: {Error}", e.Reason));
+        builder.SetLogHandler((_, log) =>
+        {
+            var logLevel = log.Level switch
             {
-                var logLevel = log.Level switch
-                {
-                    SyslogLevel.Emergency or SyslogLevel.Alert or SyslogLevel.Critical or SyslogLevel.Error => LogLevel.Error,
-                    SyslogLevel.Warning => LogLevel.Warning,
-                    SyslogLevel.Notice or SyslogLevel.Info => LogLevel.Information,
-                    SyslogLevel.Debug => LogLevel.Debug,
-                    _ => LogLevel.Information
-                };
-                _logger.Log(logLevel, "Kafka log: {Message}", log.Message);
-            })
-            .Build();
+                SyslogLevel.Emergency or SyslogLevel.Alert or SyslogLevel.Critical or SyslogLevel.Error => LogLevel
+                    .Error,
+                SyslogLevel.Warning => LogLevel.Warning,
+                SyslogLevel.Notice or SyslogLevel.Info => LogLevel.Information,
+                SyslogLevel.Debug => LogLevel.Debug,
+                _ => LogLevel.Information
+            };
+            _logger.Log(logLevel, "Kafka log: {Message}", log.Message);
+        });
+        builder.SetValueSerializer(new ProtobufSerializer<TValue>());
+
+        _producer = builder.Build();
 
         _logger.LogInformation("Kafka publisher initialized with servers: {Servers}", options.BootstrapServers);
     }
@@ -116,6 +123,11 @@ public class KafkaProducerImpl<TKey, TValue> : IKafkaProducer<TKey, TValue>
                 };
             }
         }
+    
+    public async Task<KafkaProducerResponse> SendAsync(string topic, TValue value, IDictionary<string, string>? headers = null, CancellationToken cancellationToken = default)
+    {
+        return await SendAsync(topic, default(TKey), value, headers, cancellationToken);
+    }
     
     private void ThrowIfDisposed()
     {
