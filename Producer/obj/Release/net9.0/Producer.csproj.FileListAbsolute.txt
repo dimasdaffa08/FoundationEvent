@@ -1,0 +1,12 @@
+/Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Release/net9.0/Producer.deps.json
+/Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Release/net9.0/Producer.dll
+/Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Release/net9.0/Producer.pdb
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.csproj.AssemblyReference.cache
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.AssemblyInfoInputs.cache
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.AssemblyInfo.cs
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.csproj.CoreCompileInputs.cache
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.dll
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/refint/Producer.dll
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.pdb
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/ref/Producer.dll
