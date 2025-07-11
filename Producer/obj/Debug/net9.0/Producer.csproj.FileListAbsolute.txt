@@ -1,4 +1,3 @@
-/Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Debug/net9.0/appsettings.json
 /Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Debug/net9.0/Producer.deps.json
 /Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Debug/net9.0/Producer.dll
 /Users/dimasdaffa/Project/FoundationEvent/Producer/bin/Debug/net9.0/Producer.pdb
@@ -11,3 +10,4 @@
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Debug/net9.0/refint/Producer.dll
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Debug/net9.0/Producer.pdb
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Debug/net9.0/ref/Producer.dll
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Debug/net9.0/Producer.sourcelink.json
