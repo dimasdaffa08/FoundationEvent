@@ -1,26 +1,21 @@
 using Base.Configurations;
 using Confluent.Kafka;
 
-namespace Producer.Configurations;
+namespace Consumer.Configurations;
 
-public class KafkaProducerConfig
+public class KafkaConsumerConfig
 {
-    public static ProducerConfig BuildProducerConfig(KafkaProperties options)
+    public static ConsumerConfig BuildConsumerConfig(KafkaProperties options)
     {
-        var config = new ProducerConfig
+        var config = new ConsumerConfig
         {
             BootstrapServers = options.BootstrapServers,
+            GroupId = options.GroupId,
+            EnableAutoCommit = options.EnableAutoCommit,
+            AutoOffsetReset = Enum.Parse<AutoOffsetReset>(options.AutoOffsetReset, true),
+            SessionTimeoutMs = options.SessionTimeoutMs,
             ClientId = options.ClientId,
-            Acks = Enum.Parse<Acks>(options.Acks, true),
-            // Retries = options.Retries,
-            BatchSize = options.BatchSize,
-            LingerMs = options.LingerMs,
-            CompressionType = Enum.Parse<CompressionType>(options.CompressionType, true),
-            RequestTimeoutMs = options.RequestTimeoutMs,
-            // DeliveryTimeoutMs = options.DeliveryTimeoutMs,
             SecurityProtocol = Enum.Parse<SecurityProtocol>(options.SecurityProtocol, true),
-            EnableIdempotence = options.EnableIdempotence,
-            // MaxInFlightRequestsPerConnection = options.MaxInFlightRequestsPerConnection,
         };
 
         // SASL configuration

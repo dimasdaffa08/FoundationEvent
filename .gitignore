@@ -1,23 +1,31 @@
-bin/
-obj/
+*/bin/
+*/obj/
+*/out/
 *.user
 *.suo
 
+*.userosscache
+*.sln.docstates
 .idea/
+.vscode/
 *.sln.iml
 
+.nuget/
 *.nupkg
 *.snupkg
 *.nuspec
 *.lock.json
 packages/
 project.lock.json
+artifacts/
+*.dotCover
 
 *.deps.json
 *.runtimeconfig.json
 
 TestResults/
 coverage/
+*.trx
 *.coverage
 *.coveragexml
 *.codecoverage
