@@ -42,7 +42,7 @@ var message = new UserMessage
 // Assuming `factory` is your internal abstraction that resolves the KafkaProducerImpl via DI (Dependency Injection)
 var producer = factory.CreateProducer<string, UserMessage>();
 
-var result = await producer.SendAsync("test-proto-topic", "123", message, headers);
+var result = await producer.SendAsync("test-proto-topic", message, headers);
 ```
 
 ## Configuration

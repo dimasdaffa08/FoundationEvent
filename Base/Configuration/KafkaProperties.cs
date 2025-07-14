@@ -1,10 +1,20 @@
-namespace Producer.Configurations;
+namespace Base.Configurations;
 
-public class KafkaProducerProperties
+public class KafkaProperties
 {
     public string BootstrapServers { get; set; } = string.Empty;
     
+    public string? Topic { get; set; }
+
+    public string? GroupId { get; set; }
+
     public string? ClientId { get; set; }
+    
+    public bool EnableAutoCommit { get; set; } = true;
+    
+    public string AutoOffsetReset { get; set; } = "Earliest";
+    
+    public int SessionTimeoutMs { get; set; } = 6000;
         
     public string Acks { get; set; } = "all";
         

@@ -1,4 +1,5 @@
 using System.Text;
+using Base.Configurations;
 using Confluent.Kafka;
 using Google.Protobuf;
 using Microsoft.Extensions.Logging;
@@ -12,11 +13,11 @@ public class KafkaProducerImpl<TKey, TValue> : IKafkaProducer<TKey, TValue>
 {
     private readonly IProducer<TKey, string> _producer;
     private readonly ILogger<KafkaProducerImpl<TKey, TValue>> _logger;
-    private readonly KafkaProducerProperties _options;
+    private readonly KafkaProperties _options;
     private readonly JsonFormatter _jsonFormatter;
     private bool _disposed = false;
     
-    public KafkaProducerImpl(KafkaProducerProperties options, ILogger<KafkaProducerImpl<TKey, TValue>> logger)
+    public KafkaProducerImpl(KafkaProperties options, ILogger<KafkaProducerImpl<TKey, TValue>> logger)
     {
         _options = options ?? throw new ArgumentNullException(nameof(options));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));

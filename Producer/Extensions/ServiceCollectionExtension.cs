@@ -1,13 +1,13 @@
+using Base.Configurations;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Producer.Configurations;
 using Producer.Extensions.Factory;
 
 namespace Producer.Extensions;
 
 public static class ServiceCollectionExtension
 {
-    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, Action<KafkaProducerProperties> configureOptions)
+    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, Action<KafkaProperties> configureOptions)
     {
         if (services == null)
             throw new ArgumentNullException(nameof(services));
@@ -15,7 +15,7 @@ public static class ServiceCollectionExtension
         if (configureOptions == null)
             throw new ArgumentNullException(nameof(configureOptions));
 
-        var options = new KafkaProducerProperties();
+        var options = new KafkaProperties();
         configureOptions(options);
         
         services.TryAddSingleton(options);
@@ -23,7 +23,7 @@ public static class ServiceCollectionExtension
         return services;
     }
     
-    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, KafkaProducerProperties options)
+    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, KafkaProperties options)
     {
         if (services == null)
             throw new ArgumentNullException(nameof(services));
