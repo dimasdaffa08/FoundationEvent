@@ -19,7 +19,7 @@ public class KafkaProducerConfig
             // DeliveryTimeoutMs = options.DeliveryTimeoutMs,
             SecurityProtocol = Enum.Parse<SecurityProtocol>(options.SecurityProtocol, true),
             EnableIdempotence = options.EnableIdempotence,
-            // MaxInFlightRequestsPerConnection = options.MaxInFlightRequestsPerConnection
+            // MaxInFlightRequestsPerConnection = options.MaxInFlightRequestsPerConnection,
         };
 
         // SASL configuration

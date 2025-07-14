@@ -7,7 +7,7 @@
 
         <!-- Package Information -->
         <PackageId>Foundation.Event.Producer</PackageId>
-        <PackageVersion>1.0.2-dev</PackageVersion>
+        <PackageVersion>1.0.9-dev</PackageVersion>
         <Title>Foundation Event Producer</Title>
         <Authors>Dimas</Authors>
         <Company>Company</Company>
@@ -29,6 +29,8 @@
 
     <ItemGroup>
         <PackageReference Include="Confluent.Kafka" Version="2.11.0" />
+        <PackageReference Include="Confluent.SchemaRegistry" Version="2.11.0" />
+        <PackageReference Include="Google.Protobuf" Version="3.31.1" />
         <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.6" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
@@ -36,6 +38,7 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
         <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.6" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.6" />
+        <PackageReference Include="protobuf-net" Version="3.2.52" />
     </ItemGroup>
 
 </Project>

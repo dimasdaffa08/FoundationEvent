@@ -10,3 +10,4 @@
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/refint/Producer.dll
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.pdb
 /Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/ref/Producer.dll
+/Users/dimasdaffa/Project/FoundationEvent/Producer/obj/Release/net9.0/Producer.sourcelink.json

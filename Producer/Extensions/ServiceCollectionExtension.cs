@@ -1,17 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Logging;
 using Producer.Configurations;
-using Producer.Interfaces;
-using Producer.Interfaces.Impl;
+using Producer.Extensions.Factory;
 
 namespace Producer.Extensions;
 
 public static class ServiceCollectionExtension
 {
-    public static IServiceCollection AddKafkaProducer<TKey, TValue>(
-        this IServiceCollection services,
-        Action<KafkaProducerProperties> configureOptions)
+    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, Action<KafkaProducerProperties> configureOptions)
     {
         if (services == null)
             throw new ArgumentNullException(nameof(services));
@@ -21,31 +17,22 @@ public static class ServiceCollectionExtension
 
         var options = new KafkaProducerProperties();
         configureOptions(options);
-
-        services.TryAddSingleton<IKafkaProducer<TKey, TValue>>(provider =>
-        {
-            var logger = provider.GetRequiredService<ILogger<KafkaProducerImpl<TKey, TValue>>>();
-            return new KafkaProducerImpl<TKey, TValue>(options, logger);
-        });
-
+        
+        services.TryAddSingleton(options);
+        services.TryAddSingleton<KafkaProducerFactory>();
         return services;
     }
     
-    public static IServiceCollection AddKafkaProducer<TKey, TValue>(
-        this IServiceCollection services,
-        KafkaProducerProperties options)
+    public static IServiceCollection AddKafkaProducer<TKey, TValue>(this IServiceCollection services, KafkaProducerProperties options)
     {
         if (services == null)
             throw new ArgumentNullException(nameof(services));
             
         if (options == null)
             throw new ArgumentNullException(nameof(options));
-
-        services.TryAddSingleton<IKafkaProducer<TKey, TValue>>(provider =>
-        {
-            var logger = provider.GetRequiredService<ILogger<KafkaProducerImpl<TKey, TValue>>>();
-            return new KafkaProducerImpl<TKey, TValue>(options, logger);
-        });
+        
+        services.TryAddSingleton(options);
+        services.TryAddSingleton<KafkaProducerFactory>();
 
         return services;
     }

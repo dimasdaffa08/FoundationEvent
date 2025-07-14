@@ -12,10 +12,11 @@
     <releaseNotes>Initial release of Kafka Producer library</releaseNotes>
     <copyright>Copyright (c) 2025</copyright>
     <tags>kafka messaging publisher dotnet9</tags>
-    <repository type="git" url="https://github.com/yourcompany/messaging-kafka" />
+    <repository type="git" url="https://github.com/yourcompany/messaging-kafka" commit="a58d05f9fb243d7fc98884a8bcc1e1774f7ed02e" />
     <dependencies>
       <group targetFramework="net9.0">
         <dependency id="Confluent.Kafka" version="2.11.0" exclude="Build,Analyzers" />
+        <dependency id="Google.Protobuf" version="3.31.1" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Configuration" version="9.0.6" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Configuration.Json" version="9.0.6" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.6" exclude="Build,Analyzers" />
@@ -23,6 +24,7 @@
         <dependency id="Microsoft.Extensions.Hosting" version="9.0.6" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Logging" version="9.0.6" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Logging.Abstractions" version="9.0.6" exclude="Build,Analyzers" />
+        <dependency id="protobuf-net" version="3.2.52" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

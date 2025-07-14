@@ -9,4 +9,6 @@ public class KafkaProducerResponse
     public bool IsSuccess { get; set; }
     public string? Error { get; set; }
     public IDictionary<string, string>? Headers { get; set; }
+    public string? MessageJson { get; set; }
+    public int MessageSize { get; set; }
 }
