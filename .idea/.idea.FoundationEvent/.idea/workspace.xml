@@ -4,48 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1964f63e-a170-4d5f-ba98-3fd9be136a79" name="Changes" comment="Initial Creation of Foundation Event Producer">
-      <change afterPath="$PROJECT_DIR$/Producer/Extensions/Factory/KafkaProducerFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Producer/Extensions/ProtobufSerializer.cs" afterDir="false" />
+    <list default="true" id="1964f63e-a170-4d5f-ba98-3fd9be136a79" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FoundationEvent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FoundationEvent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/Configurations/KafkaProducerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Configurations/KafkaProducerConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/Extensions/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/Interfaces/IKafkaProducer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Interfaces/IKafkaProducer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/Interfaces/Impl/KafkaProducerImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Interfaces/Impl/KafkaProducerImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producer/Model/KafkaProducerResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Model/KafkaProducerResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/Producer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/Producer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Debug/net9.0/Producer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/bin/Release/Foundation.Event.Producer.1.0.2-dev.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Release/Foundation.Event.Producer.1.0.2-dev.nupkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/bin/Release/Foundation.Event.Producer.1.0.2-dev.snupkg" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Release/Foundation.Event.Producer.1.0.2-dev.snupkg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/bin/Release/net9.0/Producer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/Producer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/ref/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/ref/Producer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/refint/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Debug/net9.0/refint/Producer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Producer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Producer.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Release/Foundation.Event.Producer.1.0.2-dev.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/Foundation.Event.Producer.1.0.2-dev.nuspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Release/Foundation.Event.Producer.1.0.2-dev.symbols.nuspec" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/Foundation.Event.Producer.1.0.2-dev.symbols.nuspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/Producer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/ref/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/ref/Producer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/Release/net9.0/refint/Producer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/Release/net9.0/refint/Producer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Producer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Producer/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -57,50 +37,55 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dimasdaffa08"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dimasdaffa08&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:dimasdaffa08/FoundationEvent.git",
-    "accountId": "9ccb5e4d-0a7a-4ec2-8b9d-200426ac4c29"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:dimasdaffa08/FoundationEvent.git&quot;,
+    &quot;accountId&quot;: &quot;9ccb5e4d-0a7a-4ec2-8b9d-200426ac4c29&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35089616d11149d390374bacc63c53616e400/58/5f4e2915/IProducer`2.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2zit4jRRU05JnsJvVoUnaYJnvbh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DEV-001&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="fsdas">
       <option name="closed" value="true" />
@@ -124,21 +109,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752225533594</updated>
-      <workItem from="1752225536528" duration="7152000" />
+      <workItem from="1752225536528" duration="12732000" />
+      <workItem from="1752482596457" duration="877000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[DEV-001] Implement Protobuf">
+      <option name="closed" value="true" />
+      <created>1752251668230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752251668230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="1" />
     <MESSAGE value="fsdas" />
     <MESSAGE value="Initial Creation of Foundation Event Producer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Creation of Foundation Event Producer" />
+    <MESSAGE value="[DEV-001] Implement Protobuf" />
+    <option name="LAST_COMMIT_MESSAGE" value="[DEV-001] Implement Protobuf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

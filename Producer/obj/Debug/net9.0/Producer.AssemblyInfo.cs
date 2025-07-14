@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright (c) 2025")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Internal Kafka Producer library for .NET 9 applications")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58d05f9fb243d7fc98884a8bcc1e1774f7ed02e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c777e8068fc220019e4cdc47e5bffba45dc1a3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Message")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Producer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
