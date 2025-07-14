@@ -1,6 +1,6 @@
 # Foundation Event - Producer (Protobuf Message)
 
-A generic, reusable **Kafka Producer** implementation using `Confluent.Kafka`, `Google.Protobuf`, and structured logging, built for .NET 9 applications.
+A generic, reusable **Kafka Producer** implementation using `Confluent.Kafka`, `Google.Protobuf`, and structured logging, built with .NET 9 applications.
 
 ---
 
